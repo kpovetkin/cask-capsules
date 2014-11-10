@@ -1,0 +1,61 @@
+.cask-capsules-dropdown {
+  width: 190px;
+  cursor: default;
+
+  .cask-capsules-dropdown-header,
+  .cask-capsules-dropdown-content {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #808080;
+  }
+
+  .cask-capsules-dropdown-header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    .cask-capsules-dropdown-title,
+    .cask-capsules-dropdown-trigger {
+      display: inline-block;
+      margin: auto 0;
+    }
+
+    .cask-capsules-dropdown-title {
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    .cask-capsules-dropdown-trigger {
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-right: 10px solid #808080;
+      transition: all .3s ease;
+    }
+  }
+
+  .cask-capsules-dropdown-content {
+    max-height: 0;
+    opacity: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all .3s ease;
+  }
+
+  &.open {
+    .cask-capsules-dropdown-header {
+      .cask-capsules-dropdown-trigger {
+        transform: rotate(-90deg);
+      }
+    }
+
+    .cask-capsules-dropdown-content {
+      max-height: 999em;
+      opacity: 1;
+      padding: 10px;
+    }
+  }
+}
