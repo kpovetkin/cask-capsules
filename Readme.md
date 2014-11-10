@@ -24,7 +24,7 @@ or
 <link rel="stylesheet" href="cask-capsules-0.0.0.css">
 ```
 
-Next line should added after AngularJS lib.
+Next line should be added after AngularJS lib.
 
 ```
 <script src="cask-capsules-0.0.0.min.js"></script>
